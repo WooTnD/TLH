@@ -1,0 +1,991 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>WP Cost Estimation & Payment Forms Builder · Documentation</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.min.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-6 col-lg-3 me-0 px-3" href="#">
+      <img class="float-start me-3" src="assets/img/logo.png" alt="WP Cost Estimation & Payment Forms Builder" />
+      WP Cost Estimation & Payment Forms Builder
+    </a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-nav">
+      <div class="nav-item text-nowrap">
+        
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="mainMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#intro" data-section="intro">
+                <i class="fas fa-home me-2"></i>
+                Introduction
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#installation" data-section="installation">
+                <i class="fas fa-upload me-2"></i>  
+                Installation
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formsManagement" data-section="formsManagement">
+                <i class="fas fa-edit me-2"></i>
+                Manage your forms
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stepsManagement" data-section="stepsManagement">
+                <i class="fas fa-project-diagram me-2"></i>
+                 Steps manager
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stepEdition" data-section="stepEdition">
+                <i class="fas fa-edit me-2"></i>
+                Step edition
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#itemEdition" data-section="itemEdition">
+                <i class="fas fa-cube me-2"></i>
+                Component edition
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formSettings" data-section="formSettings">
+                <i class="fas fa-calculator me-2"></i>
+                Form settings
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#globalSettings" data-section="globalSettings">
+                <i class="fas fa-cogs me-2"></i>
+                Global settings
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#integrate" data-section="integrate">
+                <i class="fas fa-cogs me-2"></i>
+                Integrate a form in pages
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ordersManagement" data-section="ordersManagement">
+                <i class="fas fa-clipboard-check me-2"></i>
+                 Manage your orders
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#customersManagement" data-section="customersManagement">
+                <i class="fas fa-user-tie me-2"></i>
+                Manage your customers
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#calculations" data-section="calculations">
+                <i class="fas fa-dollar-sign me-2"></i>
+                Prices & quantity calculations
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#variables" data-section="variables">
+                <i class="fas fa-calculator me-2"></i>
+                Use variables
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#booking" data-section="booking">
+                <i class="far fa-calendar-alt me-2"></i>
+                Booking system
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#wooCommerce" data-section="wooCommerce">
+                <i class="fas fa-shopping-cart me-2"></i>
+                Use with Woocommerce
+              </a>
+            </li>            
+            <li class="nav-item">
+            <a class="nav-link" href="#import" data-section="import">
+                <i class="fas fa-cloud-upload-alt me-2"></i>                
+                Import & Export data
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <main class="col-md-8 col-lg-6 px-md-4 p-4">
+      <section data-section="intro">
+        <h1>Introduction</h1>
+        <p>
+          <img src="assets/img/fullLogo.png" alt="" />
+        </p>
+        <p>
+          Thank you for purchasing a license of this plugin.<br/>
+          As you will see very quickly, this one differs enormously from the usual Wordpress extensions, in that it is a real very complete software which runs on your Wordpress site.<br/>
+          This is intended to allow you to quickly and efficiently create all types of forms, including complex cost estimate forms that require various condition-based calculations.
+        </p>
+        <p>
+          This guide aims to help you understand how this application works in order to allow you to create your forms with peace of mind.
+        </p>
+      </section>
+      <section data-section="installation">
+        <h1>Installation</h1>
+
+        <p>
+          There are two ways to install a plugin on Wordpress.<br/>
+          The easiest way is to install it directly from the backend. In some cases the installation may fail, so you have to install the plugin using FTP software.
+        </p>
+        
+        <h2>Install from Wordpress</h2>
+        <p>
+          Click the "plugins" link in the Wordpress sidebar, click the "Add new" button, then the "Upload Plugin" button.<br/>
+          Use the file upload field to upload the plugin file name "wp-estimation-payment-forms-builder.zip" .
+        </p>
+        <img src="assets/img/screen_uploadPlugin.png" class="thumbnail" />
+
+        <p>
+          Once the plugin upload finished, activate it by clicking the "Activate Plugin" button .
+        </p>
+        <img src="assets/img/screen_activatePlugin.png" class="thumbnail" />
+        
+        <h2>Install from FTP</h2>
+        <p>
+          You require a FTP software like Filezilla to be able to upload a plugin directly on the server.<br/>
+          Your server has a FTP account (host,username,password) that was used to install Wordpress onside and that will be necessary to upload the plugin.<br/>
+          First open the "wp-estimation-payment-forms-builder.zip" plugin file and extract its content.
+        </p>
+        <p>
+          Once connected to your server thanks to the FTP software of your choice, go to the folder "/www/wp-content/plugins/", open it and copy the folder "WP_Estimation_Form" inside.<br/>
+        </p>
+        
+        <h2>Registration</h2>
+        <p>
+          Place the mouse cursor on the "E&P Form Builder" link in the Wordpress sidebar then click the "License" submenu link to open the license page of the plugin .<br/>
+          Fill your purchase code in the field and click the "Verify" button to register your license and activate automatic updates .
+        </p>
+        <img src="assets/img/screen_license.png" class="thumbnail" />
+        
+
+        </section>
+        <section id="formsManagement" data-section="formsManagement">
+          <h1>Manage your forms</h1>
+          <p>
+            Click the "E&P Form Builder" link in the Wordpress sidebar to open the forms list panel.
+          </p>
+          <img src="assets/img/screen_formsList.png" class="thumbnail" />
+          
+          <h3>Main toolbar</h3>
+          <img src="assets/img/screen_mainToolbar.png" class="thumbnail" />
+          <p>
+            At top right corner of the screen, you can see the main plugin toolbar. These buttons correspond to the elements that don't depend on a specific form :
+          </p>
+          <ul>
+            <li><b>Global settings :</b> This button opens the global settings of the plugin (like customer account page colors & texts, SMTP account etc...). <a href="#globalSettings" class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a></li>
+            <li><b>Orders list :</b> This button allows you to view and edit the orders submitted thanks to your forms. <a href="#ordersManagement" class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a></li>
+            <li><b>Customers :</b> This button allows you view and edit all the customers account that are created when an order is submitted. <a href="#customersManagement" class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a></li>
+            <li><b>View calendars :</b> This button allows you to manage your calendars and the events registered by the date pickers of your forms. <a href="#booking"class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a></li>
+            <li><b>Return to the forms list :</b> This button allows you to return to the list of the forms, from any panel of the plugin.</li>
+          </ul>
+
+          <h3>Forms list</h3>
+          <p>
+            This table lists all the existing forms. <br/>
+            Each form row contains some actions buttons. Simply move the cursor over them to see the action name :
+          </p>
+
+          <img src="assets/img/screen_formRowBtns.png" class="thumbnail" />
+          
+          <ul>
+            <li><b>Edit this form :</b> this button allows you to edit the corresponding form</li>
+            <li><b>Preview this form :</b> this button will open a new tab to allow you to test the form</li>
+            <li><b>View orders :</b> this button allows you to view the stored orders of this form <a href="#ordersManagement" class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a></li>
+            <li><b>Statistics :</b> this button will show the statistics of the form (the paid or estimated total amounts along the months & years)</li>
+            <li><b>Duplicate this form :</b> This button allows you to duplicate the full form in one click. All the steps, items, links, variables are automatically duplicated. The prices & quantity calculations are automatically updated to use the new steps and items IDs.</li>
+            <li><b>Form designer :</b> this button open the Form Designer tool, to allow you to customize the visual appearance of the form</li>
+            <li><b>Delete this form : </b> this button will delete the selected form and the corresponding stored orders</li>
+          </ul>
+          
+          <p>
+             When you create or edit form, you access to the form edition page :
+          </p>
+          <img src="assets/img/screen_stepsManager.png" class="thumbnail" />
+
+          <p>
+            In the left part of the form edition toolbar you can see the navigation buttons that allow you to switch between the form edition tools :
+          </p>
+          <img src="assets/img/screen_formEditionTabs.png" class="thumbnail" />
+          <ul>
+            <li><b>Steps manager :</b> The steps manager allows you to manage the steps process of your form and create link conditions. <a href="#stepsManagement" class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a></li>
+            <li><b>Last step :</b> This button allows you to edit the final static step of the form <a href="#stepsManagement" class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a></li>
+            <li><b>Form settings :</b> The form settings contains all the options relative to the current form (features, email, colors, text, currency etc ...) <a href="#formSettings" class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a></li>
+            <li><b>Variables :</b> This tool allows you to create variables that can be used in the calculations and custom content of your form <a href="#variables" class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a></li>
+            <li><b>Orders :</b> Manage the orders that were submitted from the current form<a href="#variables" class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a></li>
+            <li><b>Statistics :</b> show the statistics of the form (the paid or estimated total amounts along the months & years)</li>
+            <li><b>Designer :</b> open the Form Designer tool to allow you to customize the visual appearance of the form</li>
+          </ul>
+
+          <p>
+            The right part of the form edition toolbar shows the actions relative to the current opened panel :
+          </p>
+          <img src="assets/img/screen_formEditionActions.png" class="thumbnail" />
+          <p>
+            These buttons change when you navugate to a different tool panel by using the navigation buttons.
+          </p>
+
+          
+        </section>
+        <section id="stepsManagement" data-section="stepsManagement">
+          <h1>Steps manager</h1>
+          <p>
+            Edit or create a a form to access to the form edition page :
+          </p>
+          <img src="assets/img/screen_stepsManager.png" class="thumbnail" />
+          <p>
+            The steps manager is the panel opened by default. It shows all the steps of the form and allows you to link and create conditions to show each one depending on the wanted conditions.<br/>
+            A final static step is always added at end of the form, after the configured steps. To create a single step form, you simply need to edit the last step without creating additional steps.<br/>
+            Move the cursor over a step circle to see the possible actions buttons :
+          </p>
+          <img src="assets/img/screen_stepCircleActions.png" class="thumbnail" />
+          <ul>
+            <li><b>Define as start step :</b> Click this button to set this step as first step of the form</li>
+            <li><b>Start a link to another step :</b> Click this button to create a link that goes from this step to another one</li>
+            Youcan freely define the conditions of each link, so the plugin will detect the valid link to call the good next step</li>
+            <li><b>Edit this step :</b> Click this button to edit th content of the selected step <a href="#stepEdition" class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a></li>
+            <li><b>Duplicate this step :</b> This button allows you to duplicate the selected step and all its content in one click</li>
+            <li><b>Remove this step :</b> This button allows youto delete the selected step and its content</li>
+          </ul>
+
+          <p>
+            To link two steps, simply click the "Start a link to another step" button on the wanted step, then click the target step circle :
+          </p>
+          <img src="assets/img/screen_link.png" class="thumbnail" />
+          <p>
+            The pencil icon at middle of the link allows you to define the conditions of this link.<br/>
+            When the "Next step" button is clicked in a step, the plugin verifies the conditions of all the links that start from this step.<br/>
+            If there is a valid link, it will open its target step as next step. Otherwise it will show the final step.<br/>
+            If there are several valid links, it will select the one that has the less conditions defined.
+          </p>
+         
+        </section>
+        
+        <section id="stepEdition" data-section="stepEdition">
+          <h1>Step edition</h1>
+          <p>
+            Click the "Edit this step" button on a step circle from the "Steps manager" panel to open the step edition panel :
+          </p>
+          <img src="assets/img/screen_stepBuilder.png" class="thumbnail" />
+          <p>
+            The step layout is made up of rows. Rows are made up of columns, and columns contains the items components.<br/>
+            You can add new rows by clicking the green "+" buttons at top and bottom of the step content : 
+          </p>
+          <img src="assets/img/screen_stepBuilderAddRow.png" class="thumbnail" />
+          <p>
+            Simply move the cursor over a row to see its edition menu :
+          </p>
+          <img src="assets/img/screen_stepBuilderRowMenu.png" class="thumbnail" />
+          <p>
+            Simply click the "+" button  you to add a new column in this row.<br/>
+            You can change the size of a column from its toolbar that is displayed when you move the cursor over it, and add new components inside by clicking its gray "+" buttons : 
+          </p>
+          <img src="assets/img/screen_stepBuilderColumnMenu.png" class="thumbnail" />
+          <p>
+            In the same way, simply move the cursor over a component to see its menu and edit it by clicking the pencil icon :
+          </p>
+          <img src="assets/img/screen_stepBuilderItemMenu.png" class="thumbnail" />
+          <p>
+            Components and columns can be moved and sorted by using drag & drop to create the wanted layout.<br/>
+            To be able to delete a column, you first need to remove the components it contains.<br/>
+            Simply click the pencil icon in the wanted component toolbar to edit its options. <a href="#itemEdition" class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a>
+          </p>
+
+
+        </section>
+        <section id="itemEdition" data-section="itemEdition">
+          <h1>Component edition</h1>
+          <p>
+            Once the pencil button clicked on a component, you access to the component edition panel :
+          </p>
+          <img src="assets/img/screen_editItemGeneral.png" class="thumbnail" />
+          <img src="assets/img/screen_editItemPrice.png" class="thumbnail" />
+          <p>
+            The buttons of the toolbar allows you to navigate between the different tabs of the component edition panel :
+          </p>
+          <img src="assets/img/screen_editItemTabs.png" class="thumbnail" />
+          <p>
+            All the options displayed in these tabs are dynamic and can depend on each other.<br/>
+            For example, if you select "Slider" in the "Type" option, the "Price & quantity" tab will show price and quantities related options, but if you select "Custom content" as type, the price and quantity options will be hidden.<br/>
+            You simply need to move your cursor over an option to see more information about it.<br/>
+            This documentation will not list all the available component options, but only some of them in order to explain some specific points :<br/>
+                   
+          </p>
+          <ul>
+            <li><b>Step : </b> This option allows you to easily move the selected component in another step.</li>
+            <li><b>Type : </b> This option allows you to change the type of the selected component without losing the values filled in the different options, allowing you to revert your choice keeping all the settings made.</li>
+            <li><b>Radio group name : </b> By filling the same value in the "Radio group name" option of several components, the user will be able to select only one of them at same time</li>
+            <li><b>Price calculation : </b>This option allows you to configure a dynamic unit price for the selected component. <a href="#calculations" class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a> </li>
+            <li><b>Quantity calculation :</b> This option works exactly like the price calculation option, but it defines the default quantity of the selected component </li>
+            <li><b>Modify a variable :</b> This option works like the price and the quantity calculation options, but its result defines the value of a custom variable <a href="#variables" class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a></li>
+            
+            <li><b>Apply reductions on quantities : </b> This option allows you to define a different unit price depending on the quantity filled by th user. To use it, fill the wanted minimum quantity and the new unit price in the fields then click the "Add reduction" button</li>
+            <li><b>Type of information : </b> This option specific to the text fields allows the plugin to know the kind of data collected. It is used to detect the customer's email, but also to be able to send the contact information to Zapier, MailChimp etc ...</li>
+            <li><b>Validation mask :</b> This option is displayed when the "Type" option is set to "Text field" and the "Validation" option set to "Mask". It allows you to configure custom validation masks. You can find documentation about masks on the website of the used jQuery plugin : <a href="https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html">https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html</a></li>
+        
+            <li><b>Show in email/summary : </b> When this option is enabled, and if this item is selected, it will be displayed in the facultative summary displayed in the final step, and in the one sent by email to the admin and the customer when the form is submitted</li>
+            <li><b>Tooltip text : </b> The text filled in this option will be displayed in a tooltip when the user will move the cursor over this component</li>
+            <li><b>Display price in title : </b> If the component uses a static price, this price will be displayed in its title. But if its price is defined by a calculation, the price will be displayed in the title only when the component will be selected.</li>
+          </ul>
+          
+          
+          </section>
+          <section id="formSettings" data-section="formSettings">
+            <h1>Form settings</h1>            
+            <p>
+              The form settings panel is made of several tabs that contain the different options reative to the current form :
+            </p>
+            <h3>General</h3>
+            
+          <img src="assets/img/screen_formSettings_general.png" class="thumbnail" />
+          <p>
+            The "General" settings tab contains the main options of the form. Here are some details about some of them :
+          </p>
+          <ul>
+            <li>
+              <b>Order reference prefix : </b>
+              This value defines the prefix that will be used to generate the reference of the orders submitted from this form.<br/>
+              <u>This value must be unique</u> for each form.
+            </li>
+            <li> 
+              <b>Google Analytics ID : </b>
+              Filling your Google Analytics ID allows you to track the visited steps of the form on your Analytics dashboard, thanks to anchors in the tracked URLs.<br/>
+              Ex: https://www.yourwebsite.com/the-form-page/#step-1-title
+            </li>
+            <li> 
+              <b>Google Maps browser key : </b>
+              Filling your Google Maps API key unlocks the "Map" component and the distance calculation options in prices and quantity calculations.<br/>
+              Here are the services that must be activated on the used API key :
+              <ul>
+                <li>Distance Matrix API</li>
+                <li>Maps JavaScript API</li>
+                <li>Places API</li>
+                <li>Geocoding API</li>
+              </ul>
+            </li>
+            <li>
+              <b>Distances calculation mode : </b>
+              This option allows you to choose if the calculations must use road travels or fly travels to recover the distance of the travel duration between two addresses. 
+              </li>
+              <li>
+                <b>Use steps visual builder : </b>
+                If this option is disabled, the components will be managed from a classical table list instead of the visual builder
+                </li>
+                <li>
+                  <b>Automatic next step : </b>
+                  If  this option is enabled, when a step has its "Selection required" option activated and when all the components inside have the same "Radio group" name, the next step button will be hidden, and the next step will be called as soon as a component will be selected.
+                </li>
+                <li>
+              <b>Add a button "Save form to finish later" : </b>
+              This option adds a button at top of the form that allows the user to save the form progression to be able to continue it later.<br/>
+              The plugin uses the browser local storage to save the progression of the form.
+              </li>
+              <li>
+                <b>Distances calculation mode : </b>
+                This option allows you to choose if the calculations must use road travels or fly travels to recover the distance of the travel duration between two addresses. 
+                </li>                                  
+          </ul>
+
+            <h3>Date & currency</h3>
+            <img src="assets/img/screen_formSettings_date.png" class="thumbnail" />
+            <p>
+              This panel contains all the options relative to the dates, time, currency and price separators.
+            </p>
+
+
+            <h3>Texts</h3>
+            <img src="assets/img/screen_formSettings_email.png" class="thumbnail" />
+            <p>
+              The options of this panel allows you to modify all the texts used in the form.
+            </p>
+
+            <h3>Email</h3>
+            <img src="assets/img/screen_formSettings_email.png" class="thumbnail" />
+            <p>
+              This panel contains all the options relative to the email & pdf file sent to the admin and customer at end of the form :
+            </p>
+            <ul>
+              <li>
+                <b>Admin email : </b>
+                Fill your email email address in this option to receive the orders by email when the form is submitted.<br/>
+                You can fill several addresses separated by comma to send it to several addresses.
+              </li>
+              <li>
+                <b>Email content : </b>
+                Both admin and customer's email content template are fully editable by using WYSIWYG editors.<br/>
+                The first button "Add a dynamic value" button allows you to show the value/quantity/price of any element of the form in your custom content :<br/>
+                <img src="assets/img/screen_emailContentToolbar1.png" class="thumbnail" /><br/>
+                The second button "Add a shortcode" allows you to place predefined elements (like total price, summary table etc...) in your content :<br/>
+                <img src="assets/img/screen_emailContentToolbar2.png" class="thumbnail" />
+              </li>
+              <li>
+                <b>Admin email : </b>
+                Fill your email email address in this option to receive the orders by email when the form is submitted.<br/>
+                You can fill several addresses separated by comma to send it to several addresses.
+              </li>
+              <li>
+                <b>Send contact to Mailchimp / MailPoet / GetResponse : </b>
+                These options allow you to send the contact information (detected thanks to the "Type of information" option of the text fields) to the wanted service.
+              </li>
+              <li>
+                <b>Send contact as soon the email field is filled : </b>
+                When this option is enabled, the contact information will be sent to the configured MailChimp/MailPoet/GetResponse list as soon as the step that contains the email field is finished.
+              </li>
+            </ul>
+
+            <h3>Last step</h3>
+            <img src="assets/img/screen_formSettings_lastStep.png" class="thumbnail" />
+            <p>
+              This panel contains all the options relative to the static final step of the form.
+            </p>
+
+            <ul>
+              <li>
+                <b>Final redirection : </b>
+                If you fill a URL in this option, it will be called once the form submitted. 
+              </li>
+              <li>
+                <b>Conditions on redirection : </b>
+                This option allows you to configure different possible final redirection and their corresponding conditions
+              </li>
+              <li>
+                <b>Apply V.A.T : </b>
+                Use this option to configure a tax that will be applied on the final total price of the form.
+              </li>
+              <li>
+                <b>Use reCaptcha :</b>
+                This option allows you to configure a Goggle Recaptcha 3 protection for your form.<br/>
+                This is a non-friction system, the form will not ask the user to fill any visual captcha to work.
+              </li>
+              <li>
+                <b>Download order as PDF : </b>
+                This option allows the user to download its order as PDF as soon as the final button of the form is clicked.
+              </li>
+              <li>
+                <b>Woo Commerce : </b>
+                Use these options if you want to assign woo products to some components of the form and add automatically add them to the woo cart at end of the form .<br/>
+                The products will be added to the Woo cart with the price of the corresponding form components. You can freely use price calculations to change their prices depending on conditions.
+              </li>
+              <li>
+                <b>Zapier : </b>
+                This option allows you to send the values of the wanted components to Zapier when the form is submitted. It allows you to use Zapier to pass the data to any CRM or external service.<br/>
+                Once this option enabled, you will see a new option named "Send as variable" in the component edition panel, to allow you to choose which values must be sent.<br/>
+                To use this option, you first need to create a GET web hook on Zapier, then fill this hook url in this option. Zapier will ask you to send the data once to be able to detect the parameters to collect. Simply save your form, preview it and fill it to the end to allow Zapier to detect the sent data and finalize the web hook configuration.    
+              </li>
+
+              <h3>Last step</h3>
+              <img src="assets/img/screen_formSettings_payment.png" class="thumbnail" />
+              <p>
+                This panel contains the options that allow you to configure online payment at end of your form.
+              </p>
+              <li>
+                <b>Use subscription : </b>
+                When this option is enabled, a new option "Price mode" will be displayed on the component edition panel, to allow you to define if its cost is a part of the single total or of the subscription total.<br/>
+                The result of the form can be a single total cost + a subscription cost at same time. It also works with payment (the single cost is paid immediately, and the subscription starts the next month/week/day, depending on the choosen frequency).
+                You can also choose in the main progress bar follow the single or the subscription total cost amount.                
+              </li>
+              <li>
+                <b>Use Paypal payment : </b>
+                Use this option to configure a Paypal account to receive the online payments.<br/>
+                A Business Paypal account is required to work with subscriptions.<br/>
+               By default, the order is sent as soon as the paypal button is clicked, even of the payment is not validated.<br/>
+               To send the order only when the payment is verified, you need to use the "IPN" paypal option and configure the mentioned URL as IPN callback on Paypal (<a href="https://developer.paypal.com/docs/api-basics/notifications/ipn/#implement-an-ipn-solution">See Paypal IPN documentation</a>) 
+              </li>
+
+              <li>
+                <b>Use Stripe payment : </b>
+                Use this option to configure a Stripe account to receive the online payments.<br/>
+                Once your Stripe account created, simply copy and paste your Stripe keys (live or test ones) in the corresponding options to activate Stripe payment.<br/>
+                Please note that the live keys require a "HTTPS" protocol, it will not work if SSL isn't activated.
+              </li>
+
+              <li>
+                <b>Use Razorpay payment : </b>
+                Use this option to configure a Razorpay account to receive the online payments.<br/>
+                Once your Razorpay account created, simply copy and paste your Stripe keys (live or test ones) in the corresponding options to activate Razorpay payment.<br/>
+              </li>
+              
+              <h3>Summary</h3>
+
+              <img src="assets/img/screen_formSettings_summary.png" class="thumbnail" />
+              <p>
+                This panel contains all the options relative to the summary that can be displayed in the final step of the form and sent by email to admin and customer.
+              </p>
+              
+              <h3>Discount coupons</h3>
+
+              <img src="assets/img/screen_formSettings_discount.png" class="thumbnail" />
+              <p>
+                This panel allows you to create reduction codes that can be filled in the final step of the form by the customers to apply the corresponding reduction.<br/>
+                Each discount coupon can be defined as fixed amount or percentage, and you can freely define their maximum number of use.<br/>
+                When a discount coupon has no more possible use, it is automatically deleted by the plugin.
+              </p>
+  
+              <h3>GDPR</h3>
+
+              <img src="assets/img/screen_formSettings_gdpr.png" class="thumbnail" />
+              <p>
+                The GDPR option allows you to add a link in the customer's email that allows the customer to log in to be able to see his data and modify his information.<br/>
+                To be ale to use this option, you first need to enable the "Customer account management" option in the "Global settings" panel of the plugin. <a href="#globalSettings" class="btn btn-primary btn-sm btn-circle m-2 text-white"><i class="fas fa-info"></i></a>
+              </p>
+              <p>
+                Once the GDPR option enabled, you will be able to customize the link that will be displayed in the email sent to the customer.<br/>
+                If the email filled by the customer in the form is already stored, a password (sent by email) will be asked to him .
+              </p>
+  
+              <h3>Design</h3>
+              <img src="assets/img/screen_formSettings_design.png" class="thumbnail" />
+              <p>
+                This panel contains all the options that allow you to customize the appearance of the form .
+              </p>
+
+              <h3>Colors</h3>
+              <img src="assets/img/screen_formSettings_colors.png" class="thumbnail" />
+              <p>
+                All the colors used in the form can be modified from this settings panel.
+              </p>
+
+            </ul>
+            
+          </section>
+        <section id="globalSettings" data-section="globalSettings">
+          <h1>Global settings</h1>
+          <p>
+            You can open the global settings panel by clicking the gear icon in the main toolbar of the plugin :
+          </p>
+          <img src="assets/img/screen_mainToolbar.png" class="thumbnail" />
+          <p>
+            The global settings modal is made of 3 tabs :
+          </p>
+         <h3>General</h3>
+         <img src="assets/img/screen_globatSettings_general.png" class="thumbnail" />
+             <p>This tab contains the main global settings. Here are details about some of them : </p> 
+            
+            <ul>
+              <li>
+                <b>Customer account management : </b> 
+                This option allows you to enable the GDPR option in the wanted forms. <br/>
+                If the email filled by the customer in the form is already stored, a password (sent by email) will be asked to him .<br/>
+                Once this option enabled, you need to select an existing Wordpress page in the "Account management page" option.<br/>
+                The customer account system will be integrated to this page .
+              </li>
+              <li>
+                <b>Encrypt data in the database : </b>
+                When this option is enable, all the customers information will be encrypted in the database. 
+              </li>
+              <li>
+                <b>Admin email : </b>
+                This email will be used as sender address when the password recovery email will be sent to a user
+              </li>
+              <li>
+                <b>Use SMTP to send emails : </b>
+                This option allows you to configure an existing SMTP email account. When it is enabled, the emails are directly sent from the configured account, and not anymore from the server itself.
+              </li>
+            </ul>
+
+            <h3>Customer account texts</h3>
+            <img src="assets/img/screen_globatSettings_texts.png" class="thumbnail" />
+            <p>
+              You can define all the texts used in the customer account page from the options of this panel .
+            </p>
+
+            <h3>Main colors</h3>
+            <img src="assets/img/screen_globatSettings_colors.png" class="thumbnail" />
+            <p>
+              These colors are essentially used in the customer account page.
+            </p>
+
+        </section>
+        <section id="ordersManagement" data-section="ordersManagement">
+          <h1>Manage your orders</h1>
+          <p>
+            To view the stored order of a specific form, you simply need to click the "View orders" button from the forms list panel, or click the "Orders" button in the form toolbar from the form edition panel :
+          </p>
+          
+         <img src="assets/img/screen_formToolbarViewOrders.png" class="thumbnail" />
+         <p>
+           This panel lists all the orders submitted by the current form : 
+         </p>
+         <img src="assets/img/screen_orders.png" class="thumbnail" />
+         <p>
+           The actions buttons in each order row allow you to :
+         </p>
+         <ul>
+           <li>
+             <b>View the order</b>
+             </li>
+             <li>
+             <b>Edit the order</b>
+            </li>
+            <li>
+             <b>Download the order as pdf file</b>
+            </li>
+            <li>
+             <b>View the corresponding customer account</b>
+            </li>
+            <li>
+             <b>Delete the order</b>
+            </li>
+         </ul>
+         <p>
+           When you click the "View order" button, you will be able to modify the status of this order, edit it and send it by email to the customer.
+         </p>
+         <img src="assets/img/screen_order.png" class="thumbnail" />
+
+         <p>
+           When you edit an order, you freely modify the existing items names and price, and use the "+ Item row" and "+ Step row" to add new rows to the summary table.<br/>
+           The "Modify total" button allows you to change the single total price, the subscription price and the VAT price (when the corresponding options are enabled in the form settings). 
+         </p>
+         <img src="assets/img/screen_orderEdit.png" class="thumbnail" />
+
+        </section>
+        <section id="customersManagement" data-section="customersManagement">
+            <h1>Manage your customers</h1>
+            <p>
+              Simply click the customer button in the main toolbar of the plugin to open the customers list panel :
+            </p>
+            
+           <img src="assets/img/screen_customersList.png" class="thumbnail" />
+           <p>
+             This tables lists all the customers account that were automatically created when orders were submitted in the different forms.<br/>
+             The plugin uses the email address to detect if a customer account already exists or not .<br/>
+             Simply click the pencil icon in the target customer row to edit it .
+           </p>
+           <img src="assets/img/screen_customersEdit.png" class="thumbnail" />
+           <p>
+             The customer panel allows you to see and modify all the information of the selected customer.<br/>
+             It also lists all the orders of this customer, submitted by any E&P form.
+           </p>
+
+        </section>
+
+        <section id="calculations" data-section="calculations">
+          <h1>Prices & quantity calculations</h1>
+          <p>
+            Both prices calculations, quantity calculations and variables calculation use the same awesome system :
+          </p>
+          <img src="assets/img/screen_priceCalculation.png" class="thumbnail" />
+          <p>
+            The custom calculation system uses <a href="https://www.w3schools.com/js/js_if_else.asp" target="_blank">JavaScript language</a>.<br/>
+            It supports any Javascript syntax and functions, like the <a href="https://www.w3schools.com/js/js_math.asp" target="_blank">Math object ones</a>.
+          </p>
+          <p>
+            In addition to the Javascript language, shortcodes are added which are specific to this plugin.<br/>
+            The <b>[price]</b> shortcode is the result of the calculation, so a calculation looks like this :
+          </p>
+          <pre>[price] = 110.00</pre>
+          <p>
+          The other shortcodes are used to recover the value, price or quantity of any item or step of the form and use it in the calculation.<br/>
+          You don't need to write them manually : simply click the "Add a value" button above the calculation field to visually select the wanted element and attribute.
+          The plugin will automatically generate the corresponding shortcode in the calculation field :
+        </p>
+        <pre>[price] = [item-1_value]</pre>
+        <p>
+          The main operators to use are :
+        </p>
+        <ul>
+          <li><b>+ : </b>addition</li>
+          <li><b>- : </b>substraction</li>
+          <li><b>* : </b>multiplication</li>
+          <li><b>/ : </b>division</li>
+        </ul>
+        <p>
+          To create conditions, click the "Add a condition" button to access to the condition panel :
+        </p>
+        <img src="assets/img/screen_calculationConditions.png" class="thumbnail" />
+        <p>
+          Simply use the "<b>Add a condition</b>" button and the conditions dropdowns to create the wanted conditions.<br/>
+          You can also choose if all the conditions must be filled, or if only one of them must be filled to consider the condition as true, by using the dropdown placed at top of the conditions list.
+        </p>
+        <p>
+          Once the "<b>Save</b>" button clicked on the conditions panel, the plugin automatically generates the condition code in the calculation field :
+        </p>
+        <pre>[price] = 10
+          if([item-1_isChecked] && [item-2_value] < 25) {
+
+          }</pre>
+        <p>
+          Simply fill the wanted conditional price between the two braces : 
+        </p>
+        <pre>[price] = 10
+          if([item-1_isChecked] && [item-2_value] < 25) {
+            [price] = 20
+          }</pre>
+        <p>
+          In this example, the default unit cost of the current item will be $10, but if the item 1 is selected and if the value filled in the item 2 is inferior to 25, its price will become $20.
+        </p>
+        <p>
+          As explained, custom calculations support any JS syntax, so you can even create conditions in conditions, and use "else" statement :
+        </p>
+        <pre>if([item-1_isChecked]) {
+            if([item-2_isChecked]){
+              [price] = 20
+            } else {
+              [price] = 10              
+            }
+          }</pre>
+        <p>
+          The "<b>Add a distance</b>" button will be available only if the "Google Maps API key" option is filled in the form settings.<br/>
+          It allows you to recover the number of miles/km or the travel duration between the addresses that come from the text fields of your form.<br/>
+          The plugin uses the "Type of information" option of the text fields of the form to detect the available address fields.<br/>
+          The result will be a shortcode like [distance-1-2] in the calculation code, that will return the calculated distance when this calculation will be executed.
+        </p>
+        <p>
+          The "<b>Date difference</b>" button allows you to recover the number of days between the dates selected in two datepickers of the form, and use it in your calculation.
+        </p>
+
+        </section>
+        
+
+        <section id="variables" data-section="variables">
+          <h1>Use variables</h1>
+          <p>
+            Click the "Variables" button in the form edition panel toolbar to open the Variables panel :
+          </p>
+          <img src="assets/img/screen_formSettings_variables.png" class="thumbnail" />
+          <p>
+            This panel allows you to create custom variables that can be used in the calculations and the conditions of your form.<br/>
+            You can choose to modify a variable when a specific component is selected by using the "Modify a variable" option in the "Price & Quantity" tab of the target component edition panel.
+          </p>
+          <p>
+            You can create a new variable by clicking the button "<b>Add a variable</b>", or editing an existing one by clickig the pencil icon on its row.<br/>
+            Each variable has a title and a type (interger number, float number or text).
+          </p>
+          <p>
+            The variables values can be displayed in "Custom content" components and in email content by using the "Add dybnamic value" button in the editor toolbar.
+          </p>
+          <img src="assets/img/screen_editVariable.png" class="thumbnail" />
+
+        </section>
+
+        <section id="variables" data-section="booking">
+          <h1>Booking system</h1>
+          <p>
+            This plugin comes with a complete booking system and calendars management system.
+          </p>
+          <h3>Calendars management</h3>
+          <p>
+            Click the calandar icon in the main toolbar of the plugin to open the calendars management panel :
+          </p>
+          <img src="assets/img/screen_mainToolbarCalendar.png" class="thumbnail" />
+          <p>
+            The calendar panel allows you to view the registered events of your different calendars :
+          </p>          
+          <img src="assets/img/screen_calendar.png" class="thumbnail" />
+          <p>
+            Let's have a look on the calendars panel toolbar :
+          </p>          
+          <img src="assets/img/screen_calendarToolbar.png" class="thumbnail" />
+          <ul>
+            <li>
+              <b>Events categories : </b>
+              This tool allows you to create different categories that can be applied to the events of the calendar.<br/>
+              Each category can have its own color, to allow you to easily distinguish the different types of events in the calendar view.
+            </li>
+            <li>
+              <b>Default reminders : </b>
+              This option allows you to configure email remininders that will automatically be sent to the users at the wanted moment before the tevent start date.
+            </li>
+            <li>
+              <b>Default reminders : </b>
+              This option allows you to configure email remininders that will automatically be sent to the users at the wanted moment before the tevent start date.
+            </li>
+            <li>
+              <b>Available days of week : </b>
+              This tool allows you to define the days that can be selected in the date pickers that are linked to the selected calendar.
+            </li>
+            <li>
+              <b>Available hours : </b>
+              This tool allows you to define the hours that can be selected in the time pickers that are linked to the selected calendar.
+            </li>
+            <li>
+              <b>Export events : </b>
+              This button allows you to export all the events of the selected calendar as csv file.
+            </li>
+            <li>
+              <b>Calendar : </b>
+              This dropdown allows you to switch between the different created calendars.
+            </li>
+            <li>
+              <b>Add a calendar : </b>
+              Click this button to create a new calendar that can be assigned to the date pickers of your forms.
+            </li>
+            <li>
+              <b>Delete : </b>
+              Click this button to delete the selected calendar.
+            </li>
+          </ul>
+          <p>
+            Simply click an empty case in the calendar view to create a new event at this date.<br/>
+            To edit an event, simply click it from the calendar view :
+          </p>
+          <img src="assets/img/screen_calendarEvent.png" class="thumbnail" />
+          <p>
+            The sidenar panel contains all the details about the selected event.<br/>
+            Here are details on some of these options :
+          </p>
+          <ul>
+            <li>
+              <b>Full day : </b>
+              This option will remobe the "End date" option and will use the full selected day for the current event.
+            </li>
+            <li>
+              <b>Busy date : </b>
+              If this option is enabled, the users will not be able to select this date in the datepickers that are assigned to this calendar.
+            </li>
+            <li>
+              <b>Corresponding order : </b>
+              This option allows you to view and modify the form order associated to this event
+            </li>
+          </ul>
+
+          <h3>Assign a calendar to a date picker</h3>
+          <p>
+            To assign a calendar to a date picker of a form, you need to edit it and use its "Calendar" dropdown to select the target calendar :
+          </p>
+          <img src="assets/img/screen_itemCalendarOptions.png" class="thumbnail" />
+          <p>
+            When a calendar is assigned to the date picker, the disabled days and hours of the calendar will be disabled in the date menu displayed in the form .<br/>
+            Here are details on some of these options :
+          </p>
+          <ul>
+            <li>
+              <b>Register a new event : </b>
+              When this option is enabled, an event will be created in the selected calendar at this date when the form will be sent.
+            </li>
+            <li>
+              <b>Category of the event : </b>
+              Choose the category that will be applied to the created calendar event. Categories can be edited from the calendars management panel.
+            </li>
+            <li>
+              <b>Set date as busy  : </b>
+              If this option is enabled, and if the number of busy event at this date is equal to the value filled in the "Max events at same time" option, the user will not be able to select this date anymore.
+            </li>
+            <li>
+              <b>Event duration : </b>
+              Use this option to define the duration of the event that will be created in the calendar.
+            </li>
+            
+          </ul>
+
+        </section>
+        <section id="wooCommerce" data-section="wooCommerce">
+          <h1>Use with Woocommerce</h1>
+          <p>
+            This plugin allows you to assign products from Woocommerce to the components of your forms, and automatically add them to the Woocommerce cart when the form is submitted.<br/>
+            To be able to do that, you first need to enable the "Add selected items to cart" option in the "Last step" tab of the form settings :
+          </p>
+          <img src="assets/img/screen_formSettingsWoo.png" class="thumbnail" />
+          <p>
+            Please note that these options are only displayed when the Woocommerce is installed and activated.<br/>
+            Once done, you can use the "Woo product" option from the component panel (on priced components types like checkbox, image, button, slider etc...) to assign an existing Woo product to this component.<br/>
+            Simply start to fill the target Woocommerce product in the field and use the auto-completion menu to select it :
+          </p>
+          <img src="assets/img/screen_itemWooOption.png" class="thumbnail" />
+          <p>
+            Then you can freely modify its price or create a price calculation. The product will be added to the Woocommerce cart with the price of the selected component.
+          </p>
+          <p>
+            Only Woocommerce products can be added to the Woocommerce cart. All the other data is sent to the admin and stored by the plugin when the form is submitted.
+            The reference of the sent order will be added as attribute to the Woocommerce product in the Woocommerce order, to allow you to find the corresponding data.<br/>
+            You can also whoose to add the full form summary as attribute of the Woocommerce product in the Woocommerce order. 
+          </p>
+        </section>
+        
+        <section id="import" data-section="import">
+        <h1>Import & Export data</h1>
+        <p>
+          This plugin comes with a powerful import & export system that allows you to transfer all your forms/calendars/customers/orders data from a website to another one without having to reupload any image file or change any URL in the settings.<br/>
+          To export your data, simply click the "Export forms" button from the forms list panel :
+        </p>
+        <img src="assets/img/screen_exportBtn.png" class="thumbnail" />
+        <p>
+          The plugin will open the export modal that allows you to choose if you want to include stored orders and discount coupons to the exported data :
+        </p>
+        <img src="assets/img/screen_exportModal.png" class="thumbnail" />
+        <p>
+          Then click the button "Downloaded the exported data" to download a zip file that contains a json file and all the images used in the form.
+        </p>
+        <div class="alert alert-info">
+          <p>
+            If you use OSX, the downloaded zip file will be automatically extracted in a folder automatically created by the O/S.<br/>
+            To be able to import it, you must compress all the files contained in this folder in a zip file.<br/>
+            This zip file must only contain the json file and image files, not any folder.
+          </p>
+        </div>
+
+        </section>
+
+        <section id="integrate" data-section="integrate">
+          <h1>Integrate a form in pages</h1>
+          <p>
+            To integrate a form in a Wordpress page, you simply need to paste its shortcode in the page content, where you want to place it :
+            </p>
+            <pre>
+                [estimation_form form_id="1"]
+            </pre>
+            <p>
+            Click the "Shortcode" button in the row of the target form from the forms list panel to easily generate the shortcode :
+          </p>
+          <img src="assets/img/screen_shortcodeLink.png" class="thumbnail" />
+          <p>
+            Here are the options of the Shortcode modal :
+          </p>
+          <img src="assets/img/screen_shortcodeModal.png" class="thumbnail" />
+
+          <ul>
+            <li>
+              <b>Displaying : </b>
+              This option allows you to choose if the form must be displayed in the page content, in fullscreen or as a popup.<br/>
+              If you want to use it as modal, you will need to paste the form shortcode with the popup attribute, then add the css class displayed in the Shortcode modal to the button or link that must open the popup.<br/>
+              Example of shortcode :
+              <pre>[estimation_form form_id="1" popup="true"]</pre>
+              Example of css class added to a link to open the form popup :
+              <pre>&lt;a href="#" class="open-estimation-form form-1"&gt;Open Form&lt;/a&gt;</pre> 
+            </li>
+            <li>
+                <b>Start step : </b>
+                This dropdown allows you to define another start step than the default one.<br/>
+                It allows you to use a same form with different start step on different pages of your website.
+            </li>
+          </ul>
+
+          </section>
+        
+    </main>
+  </div>
+    <div id="imgPreview"></div>
+  </div>
+
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/fontawesome.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
